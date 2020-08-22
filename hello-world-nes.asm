@@ -142,7 +142,7 @@ NMI:
   stx PPU_OAM_ADDR
   lda PPU_STATUS
 Draw:
-  lda #%00011110
+  lda #%00001110 ; Disable sprites
   sta PPU_MASK
 ResetScroll:
   stx PPU_SCROLL
